@@ -1,0 +1,22 @@
+Initialize length = 0
+Initialize words = 0
+Initialize vowels = 0
+Initialize in_word = False
+
+While not end of sentence (character != '.'):
+    Read a character
+    Increment length by 1
+    
+    If character is a vowel (a, e, i, o, u, A, E, I, O, U):
+        Increment vowels by 1
+        
+    If character is a space:
+        Set in_word to False
+        
+    Else if in_word is False:
+        Increment words by 1
+        Set in_word to True
+
+Print "Length of the sentence:", length
+Print "Number of words:", words
+Print "Number of vowels:", vowels
